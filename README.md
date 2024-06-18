@@ -16,7 +16,7 @@ If you're using version control, you will want to check in this directory.
 
 This project ports the [mschmo/reveal-speech](https://github.com/mschmo/reveal-speech) plugin over to Quarto for RevealJS. Credit goes to him for the original plugin.
 
-All you have to do is ensure that you are using a browser like Chrome or Safari [where speech recognition interfaces are supported](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API#Browser_compatibility). Also you will need to ensure you microphone is enabled and you have given the browser permission to use it for the presentation.
+All you have to do is ensure that you are using a browser like Chrome or Safari [where speech recognition interfaces are supported](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API#Browser_compatibility). Also you will need to ensure your microphone is enabled and you have given the browser permission to use it for the presentation.
 
 The default phrases you can say to control slide navigation are as follows:
 
