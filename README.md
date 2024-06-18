@@ -39,6 +39,26 @@ format:
 revealjs-plugins:
     - speech
 ```
+You can write define custom phrases to say to move to the next slide by applying a data-speech-next attribute to a `<section>` slide. Saying that attributes value will move to the next slide:
+
+```html
+<section data-speech-next="movingalong">
+</section>
+```
+
+You can also reveal fragments by attaching a data-speech attribute to the fragment element. Saying that attribute value will unhide the fragment if it is the next fragment to be shown.
+
+```html
+<section>
+  <h2>List of Delicious Things:</h2>
+  <ol>
+    <li class="fragment" data-speech="spaghetti">Spaghetti</li>
+    <li class="fragment" data-speech="chicken">Chicken</li>
+    <li class="fragment" data-speech="beer">Beer</li>
+  </ol>
+</section>
+```
+
 ## Example
 
 Here is the source code for a minimal example: [example.qmd](example.qmd).

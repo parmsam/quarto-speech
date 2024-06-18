@@ -11,9 +11,13 @@ revealjs-plugins:
   - speech
 ---
 
-# Talk to your presentation and control it
+# Intro
 
-Say "next slide" to go to the next slide. Let's go over how Bob's day was. Bob is a random person.
+This Quarto extension allows you talk to your presentation and control it. Let's go over how Bob's day was. Bob is a random person. Make sure you have microphone your enabled for the web page. Read the footer for instructions.
+
+::: footer
+Say "next slide" to go to the next slide. 
+:::
 
 ## Getting up
 
@@ -34,22 +38,29 @@ Say "previous slide" to go to the previous slide.
 Say "last slide" to go to the last slide.
 :::
 
-# In the evening
-
 ## Dinner
 
 - Eat spaghetti
 - Drink wine
 
 ::: footer 
-Say "first slide" to go to the first slide.
+Say "first slide" to go to the first slide. 
 :::
 
-## Going to sleep
+# Going to sleep
 
+Say "Sheep 1" then "Sheep 2" then "Sheep 3" to count sheep. Then just say "moving along".
+
+<section data-speech-next="movingalong">
 - Get in bed
 - Count sheep
+  <ol>
+    <li class="fragment" data-speech="sheep1">Sheep 1</li>
+    <li class="fragment" data-speech="sheep2">Sheep 2</li>
+    <li class="fragment" data-speech="sheep3">Sheep 3</li>
+  </ol>
+</section>
 
-::: footer 
-You can change the keyword phrases to whatever you want in the YAML header. The defaults are listed in the [repo readme](https://github.com/parmsam/quarto-flashcards/blob/main/README.md#using).
-:::
+# Conclusion
+
+Hope that was fun. You just used your browser's speech recognition API to control these RevealJS slides. You can change the keyword phrases to whatever you want in the YAML header. The defaults are listed in the [repo readme](https://github.com/parmsam/quarto-flashcards/blob/main/README.md#using). There's also some room for customization covered in the README.
