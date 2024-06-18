@@ -6,6 +6,7 @@ window.RevealSpeech = function () {
         console.log('Browser must support webkitSpeechRecognition to use this plugin.');
         return;
       }
+      const numbersInWords = ["one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twentyone", "twentytwo", "twentythree", "twentyfour", "twentyfive", "twentysix", "twentyseven", "twentyeight", "twentynine", "thirty", "thirtyone", "thirtytwo", "thirtythree", "thirtyfour", "thirtyfive", "thirtysix", "thirtyseven", "thirtyeight", "thirtynine", "forty", "fortyone", "fortytwo", "fortythree", "fortyfour", "fortyfive", "fortysix", "fortyseven", "fortyeight", "fortynine", "fifty"];
 
       var SpeechRecognition = SpeechRecognition || webkitSpeechRecognition;
       var recognition = new SpeechRecognition();
@@ -19,9 +20,12 @@ window.RevealSpeech = function () {
         prevKeyword: options.prevKeyword ? options.prevKeyword : 'gotoprev',
         lastKeyword: options.lastKeyword ? options.lastKeyword : 'gotolast',
         firstKeyword: options.firstKeyword ? options.firstKeyword : 'gotofirst',
+        numberKeyword: options.numberKeyword ? options.numberKeyword : 'gotoslidenumber',
         debug: options.debug ? options.debug : false,
         lang: options.lang ? options.lang : ''
       };
+
+      let gotoSlidePhrases = numbersInWords.map((number, index) => `${config.numberKeyword}${number}`);
 
       function configure(options) {
         recognition.stop();
@@ -93,8 +97,14 @@ window.RevealSpeech = function () {
           deck.slide(Number.MAX_VALUE);
         } else if (transcript.includes(config.firstKeyword)) {
           deck.slide(0);
+        } else {
+          let found = gotoSlidePhrases.find((phrase) => transcript.includes(phrase));
+          if (found) {
+            console.log(`found ${found}`)
+            let slideNumber = numbersInWords.indexOf(found.replace(config.numberKeyword, ''));
+            deck.slide(slideNumber);
+          }
         }
-        // TODO - goto specific slide number
 
         if (Object.keys(fragmentSpeech).length > 0 && transcript.includes(fragmentSpeech[fragmentIndex])) {
           deck.nextFragment();
