@@ -1,6 +1,6 @@
 # Speech Extension For Quarto
 
-Adds speech recognition to RevealJS for Quarto. This project ports the [mschmo/reveal-speech](https://github.com/mschmo/reveal-speech) plugin over to Quarto for RevealJS. Credit goes to him for the original plugin. It allows you to verbally control your RevealJS slides.
+Adds speech recognition to RevealJS for Quarto. This project ports the [mschmo/reveal-speech](https://github.com/mschmo/reveal-speech) plugin over to Quarto for RevealJS. Credit goes to him for the original plugin that I've made some slight modifications to. It allows you to verbally control your RevealJS slides.
 
 ## Installing
 
