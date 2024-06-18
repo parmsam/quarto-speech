@@ -20,10 +20,10 @@ All you have to do is ensure that you are using a browser like Chrome or Safari 
 
 The default phrases you can say to control slide navigation are as follows:
 
-"Next slide" - Next slide
-"Previous slide" - Previous slide
-"Last slide" - Moves to the last slide of the presentation
-"First slide" - First slide of the presentation
+- "Next slide" - Next slide
+- "Previous slide" - Previous slide
+- "Last slide" - Moves to the last slide of the presentation
+- "First slide" - First slide of the presentation
 
 You can change these settings via special option in your YAML header like this:
 
