@@ -3,25 +3,36 @@ title: "Speech Example"
 format:
   revealjs:
     speech:
-      nextKeyword: "gotonext"
-      prevKeyword: "gotoprevious"
-      lastKeyword: "gotolast"
-      firstKeyword: "gotofirst"
+      nextKeyword: "next slide"
+      prevKeyword: "previous slide"
+      lastKeyword: "last slide"
+      firstKeyword: "first slide"
 revealjs-plugins:
   - speech
 ---
 
-# In the morning
+# Talk to your presentation and control it
+
+Say "next slide" to go to the next slide. Let's go over how Bob's day was. Bob is a random person.
 
 ## Getting up
 
 - Turn off alarm
 - Get out of bed
+- Take a shower
+
+::: footer
+Say "previous slide" to go to the previous slide.
+:::
 
 ## Breakfast
 
 - Eat eggs
 - Drink coffee
+
+::: footer
+Say "last slide" to go to the last slide.
+:::
 
 # In the evening
 
@@ -30,7 +41,15 @@ revealjs-plugins:
 - Eat spaghetti
 - Drink wine
 
+::: footer 
+Say "first slide" to go to the first slide.
+:::
+
 ## Going to sleep
 
 - Get in bed
 - Count sheep
+
+::: footer 
+You can change the keyword phrases to whatever you want in the YAML header. The defaults are listed in the [repo readme](https://github.com/parmsam/quarto-flashcards/blob/main/README.md#using).
+:::
