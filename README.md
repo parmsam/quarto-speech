@@ -43,14 +43,14 @@ revealjs-plugins:
 ```
 Just ensure that each keyword is unique and one word with no spaces.
 
-You can write define custom phrases to say to move to the next slide by applying a data-speech-next attribute to a `<section>` slide. Saying that attributes value will move to the next slide:
+You can define custom phrases to say to move to the next slide by applying a data-speech-next attribute to a `<section>` slide. Saying that attributes value will move to the next slide:
 
 ```html
 <section data-speech-next="movingalong">
 </section>
 ```
 
-You can also reveal fragments by attaching a data-speech attribute to the fragment element. Saying that attribute value will unhide the fragment if it is the next fragment to be shown.
+You can also use reveal fragments by attaching a data-speech attribute to the fragment element. Saying that attribute value will unhide the fragment if it is the next fragment to be shown.
 
 ```html
 <section>
