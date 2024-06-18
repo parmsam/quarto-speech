@@ -73,7 +73,7 @@ Say "moving along" to go to the next slide.
 
 Hope that was fun. You just used your browser's speech recognition API to control these RevealJS slides. You can change the keyword phrases to whatever you want in the YAML header. The defaults are listed in the [repo readme](https://github.com/parmsam/quarto-flashcards/blob/main/README.md#using). There's also some room for customization covered in the README.
 
-Oh, almost forgot. You can go a specific slide by saying "go to slide 3" or "go to slide 4" etc.
+Oh, almost forgot. You can go a specific slide by saying "go to slide number 3" or "go to slide number 4" etc.
 
 ::: footer 
 Say "first slide" to go to the first slide. 
