@@ -13,4 +13,5 @@ contributes:
           prevKeyword: "previousslide"
           lastKeyword: "lastslide"
           firstKeyword: "firstslide"
+          numberKeyword: "gotoslidenumber"
 

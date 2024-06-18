@@ -24,6 +24,7 @@ The default phrases you can say to control slide navigation are as follows:
 - "Previous slide" - Previous slide
 - "Last slide" - Moves to the last slide of the presentation
 - "First slide" - First slide of the presentation
+- "Go to slide number" - Prompts you to say a slide number to jump to (e.g. "Go to slide number 3"). Slide numbers are 1-based indexed.
 
 You can change these settings via special option in your YAML header like this:
 
@@ -36,6 +37,7 @@ format:
         prevKeyword: "gotoprevious"
         lastKeyword: "gotolast"
         firstKeyword: "gotofirst"
+        numberKeyword: "gotoslidenumber"
 revealjs-plugins:
     - speech
 ```
