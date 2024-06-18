@@ -41,7 +41,7 @@ format:
 revealjs-plugins:
     - speech
 ```
-Just ensure taht each keyword is unique and one word with no spaces.
+Just ensure that each keyword is unique and one word with no spaces.
 
 You can write define custom phrases to say to move to the next slide by applying a data-speech-next attribute to a `<section>` slide. Saying that attributes value will move to the next slide:
 
