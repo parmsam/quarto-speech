@@ -47,7 +47,7 @@ Say "next slide" to continue to the next slide.
 Say "next slide" to continue to the next slide.
 :::
 
-# Going to sleep
+## Going to sleep
 
 <section>
 - Get in bed
@@ -57,14 +57,17 @@ Say "next slide" to continue to the next slide.
     <li class="fragment" data-speech="twosheep">Sheep 2</li>
     <li class="fragment" data-speech="threesheep">Sheep 3
 
-    ... Zzzzzzz (say "moving along")
+    ... Zzzzzzz (say "next slide")
     </li>
   </ol>
 </section>
 
+# Zzzzzzz
+
+Say "moving along" to go to the next slide.
+
 <section data-speech-next="movingalong">
 </section>
-
 
 # Conclusion
 
