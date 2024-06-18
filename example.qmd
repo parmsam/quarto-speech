@@ -3,10 +3,10 @@ title: "Speech Example"
 format:
   revealjs:
     speech:
-      nextKeyword: "next slide"
-      prevKeyword: "previous slide"
-      lastKeyword: "last slide"
-      firstKeyword: "first slide"
+      nextKeyword: "nextslide"
+      prevKeyword: "previousslide"
+      lastKeyword: "lastslide"
+      firstKeyword: "firstslide"
 revealjs-plugins:
   - speech
 ---
@@ -16,7 +16,7 @@ revealjs-plugins:
 This Quarto extension allows you talk to your presentation and control it. Let's go over how Bob's day was. Bob is a random person. Make sure you have microphone your enabled for the web page. Read the footer for instructions.
 
 ::: footer
-Say "next slide" to go to the next slide. 
+Say "next slide" to go to the next slide or "last slide" to skip to the last slide.
 :::
 
 ## Getting up
@@ -26,7 +26,7 @@ Say "next slide" to go to the next slide.
 - Take a shower
 
 ::: footer
-Say "previous slide" to go to the previous slide.
+Say "next slide" to continue to the next slide or "previous slide" to go to the previous slide.
 :::
 
 ## Breakfast
@@ -35,7 +35,7 @@ Say "previous slide" to go to the previous slide.
 - Drink coffee
 
 ::: footer
-Say "last slide" to go to the last slide.
+Say "next slide" to continue to the next slide.
 :::
 
 ## Dinner
@@ -43,24 +43,33 @@ Say "last slide" to go to the last slide.
 - Eat spaghetti
 - Drink wine
 
-::: footer 
-Say "first slide" to go to the first slide. 
+::: footer
+Say "next slide" to continue to the next slide.
 :::
 
 # Going to sleep
 
-Say "Sheep 1" then "Sheep 2" then "Sheep 3" to count sheep. Then just say "moving along".
-
-<section data-speech-next="movingalong">
+<section>
 - Get in bed
-- Count sheep
+- Count sheep (say "1 Sheep" then "2 Sheep" then "3 Sheep" to count sheep.)
   <ol>
-    <li class="fragment" data-speech="sheep1">Sheep 1</li>
-    <li class="fragment" data-speech="sheep2">Sheep 2</li>
-    <li class="fragment" data-speech="sheep3">Sheep 3</li>
+    <li class="fragment" data-speech="onesheep">Sheep 1</li>
+    <li class="fragment" data-speech="twosheep">Sheep 2</li>
+    <li class="fragment" data-speech="threesheep">Sheep 3
+
+    ... Zzzzzzz (say "moving along")
+    </li>
   </ol>
 </section>
+
+<section data-speech-next="movingalong">
+</section>
+
 
 # Conclusion
 
 Hope that was fun. You just used your browser's speech recognition API to control these RevealJS slides. You can change the keyword phrases to whatever you want in the YAML header. The defaults are listed in the [repo readme](https://github.com/parmsam/quarto-flashcards/blob/main/README.md#using). There's also some room for customization covered in the README.
+
+::: footer 
+Say "first slide" to go to the first slide. 
+:::
