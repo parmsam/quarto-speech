@@ -332,9 +332,12 @@
 
 </section>
 <section>
-<section id="talk-to-your-presentation-and-control-it" class="title-slide slide level1 center">
-<h1>Talk to your presentation and control it</h1>
-<p>Say “next slide” to go to the next slide. Let’s go over how Bob’s day was. Bob is a random person.</p>
+<section id="intro" class="title-slide slide level1 center">
+<h1>Intro</h1>
+<p>This Quarto extension allows you talk to your presentation and control it. Let’s go over how Bob’s day was. Bob is a random person. Make sure you have microphone your enabled for the web page. Read the footer for instructions.</p>
+<div class="footer">
+<p>Say “next slide” to go to the next slide or “last slide” to skip to the last slide.</p>
+</div>
 </section>
 <section id="getting-up" class="slide level2">
 <h2>Getting up</h2>
@@ -344,7 +347,7 @@
 <li>Take a shower</li>
 </ul>
 <div class="footer">
-<p>Say “previous slide” to go to the previous slide.</p>
+<p>Say “next slide” to continue to the next slide or “previous slide” to go to the previous slide.</p>
 </div>
 </section>
 <section id="breakfast" class="slide level2">
@@ -354,13 +357,8 @@
 <li>Drink coffee</li>
 </ul>
 <div class="footer">
-<p>Say “last slide” to go to the last slide.</p>
+<p>Say “next slide” to continue to the next slide.</p>
 </div>
-</section></section>
-<section>
-<section id="in-the-evening" class="title-slide slide level1 center">
-<h1>In the evening</h1>
-
 </section>
 <section id="dinner" class="slide level2">
 <h2>Dinner</h2>
@@ -369,24 +367,45 @@
 <li>Drink wine</li>
 </ul>
 <div class="footer">
-<p>Say “first slide” to go to the first slide.</p>
+<p>Say “next slide” to continue to the next slide.</p>
 </div>
-</section>
-<section id="going-to-sleep" class="slide level2">
-<h2>Going to sleep</h2>
+</section></section>
+<section id="going-to-sleep" class="title-slide slide level1 center">
+<h1>Going to sleep</h1>
+<section>
 <ul>
-<li>Get in bed</li>
-<li>Count sheep</li>
+<li><p>Get in bed</p></li>
+<li><p>Count sheep (say “1 Sheep” then “2 Sheep” then “3 Sheep” to count sheep.)</p>
+<ol>
+<li class="fragment" data-speech="onesheep">
+<p>Sheep 1</p>
+</li>
+<li class="fragment" data-speech="twosheep">
+<p>Sheep 2</p>
+</li>
+<li class="fragment" data-speech="threesheep">
+<p>Sheep 3</p>
+<p>… Zzzzzzz (say “moving along”)</p>
+</li>
+</ol></li>
 </ul>
+</section>
+<section data-speech-next="movingalong">
+</section>
+</section>
+
+<section id="conclusion" class="title-slide slide level1 center">
+<h1>Conclusion</h1>
+<p>Hope that was fun. You just used your browser’s speech recognition API to control these RevealJS slides. You can change the keyword phrases to whatever you want in the YAML header. The defaults are listed in the <a href="https://github.com/parmsam/quarto-flashcards/blob/main/README.md#using">repo readme</a>. There’s also some room for customization covered in the README.</p>
 <div class="footer">
-<p>You can change the keyword phrases to whatever you want in the YAML header. The defaults are listed in the <a href="https://github.com/parmsam/quarto-flashcards/blob/main/README.md#using">repo readme</a>.</p>
+<p>Say “first slide” to go to the first slide.</p>
 </div>
 <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
 
 </div>
 </div>
-</section></section>
+</section>
     </div>
   </div>
 
@@ -419,7 +438,7 @@
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'speech': {"nextKeyword":"next slide","prevKeyword":"previous slide","lastKeyword":"last slide","firstKeyword":"first slide"},
+'speech': {"nextKeyword":"nextslide","prevKeyword":"previousslide","lastKeyword":"lastslide","firstKeyword":"firstslide"},
 'smaller': false,
  
         // Display controls in the bottom right corner
