@@ -74,3 +74,7 @@ You can also use reveal fragments by attaching a data-speech attribute to the fr
 ## Example
 
 Here is the source code for a minimal example: [example.qmd](example.qmd).
+
+## Disclaimer
+
+Please note that the specific modifications from the third-party repository were not explicitly licensed. Use of this code is under the assumption that it adheres to the MIT License, since Reveal.js is licensed under the MIT License.
