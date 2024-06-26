@@ -6,7 +6,7 @@ Adds speech recognition to RevealJS for Quarto. This project ports the [mschmo/r
 
 
 ```bash
-quarto add parmsam/speech
+quarto add parmsam/quarto-speech
 ```
 
 This will install the extension under the `_extensions` subdirectory.
