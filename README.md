@@ -40,12 +40,12 @@ You can change these settings via special option in your YAML header like this:
 title: My Presentation
 format:
     revealjs:
-    speech:
-        nextKeyword: "gotonext"
-        prevKeyword: "gotoprevious"
-        lastKeyword: "gotolast"
-        firstKeyword: "gotofirst"
-        numberKeyword: "gotoslidenumber"
+        speech:
+            nextKeyword: "gotonext"
+            prevKeyword: "gotoprevious"
+            lastKeyword: "gotolast"
+            firstKeyword: "gotofirst"
+            numberKeyword: "gotoslidenumber"
 revealjs-plugins:
     - speech
 ```
