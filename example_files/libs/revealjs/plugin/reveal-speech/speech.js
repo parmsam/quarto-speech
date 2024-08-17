@@ -1,3 +1,10 @@
+/*
+ * This file includes code derived from the Reveal.js library, which is licensed under the MIT License.
+ * Portions of this code are also derived from a third-party repository built on top of Reveal.js.
+ * The original author did not specify a license for these modifications, so it is assumed to fall under
+ * the MIT License.
+ */
+
 window.RevealSpeech = function () {
   return {
     id: "RevealSpeech",
@@ -28,14 +35,16 @@ window.RevealSpeech = function () {
       let gotoSlidePhrases = numbersInWords.map((number, index) => `${config.numberKeyword}${number}`);
 
       function configure(options) {
-        recognition.stop();
-        for (var key in options) {
-          if (Object.keys(config).indexOf(key) === -1) {
-            continue;
+        if (window.Reveal.isSpeakerNotes() === false) {
+          recognition.stop();
+          for (var key in options) {
+            if (Object.keys(config).indexOf(key) === -1) {
+              continue;
+            }
+            config[key] = options[key];
           }
-          config[key] = options[key];
+          recognition.start();
         }
-        recognition.start();
       }
 
       var fragmentSpeech = {};
