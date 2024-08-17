@@ -35,14 +35,16 @@ window.RevealSpeech = function () {
       let gotoSlidePhrases = numbersInWords.map((number, index) => `${config.numberKeyword}${number}`);
 
       function configure(options) {
-        recognition.stop();
-        for (var key in options) {
-          if (Object.keys(config).indexOf(key) === -1) {
-            continue;
+        if (window.Reveal.isSpeakerNotes() === false) {
+          recognition.stop();
+          for (var key in options) {
+            if (Object.keys(config).indexOf(key) === -1) {
+              continue;
+            }
+            config[key] = options[key];
           }
-          config[key] = options[key];
+          recognition.start();
         }
-        recognition.start();
       }
 
       var fragmentSpeech = {};
